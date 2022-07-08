@@ -7,32 +7,43 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6bed12e9d5.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
 
 </head>
 
 <body>
     <header class="header">
         <a href="#" class="logo">Abel</a>
-
+        
         <nav class="nav-bar">
             <ul>
-                <a href="#" class="active"> Home</a>
-                <a href="#about">   About</a>
-                <a href="#project"> Projects</a>
+                <a href="#"> Home</a>
+                <a href="#about"> About</a>
+                <a href="#projects"> Projects</a>
                 <a href="#contact"> Contact</a>
             </ul>
         </nav>
     </header>
 
-    <section class="home">
-        <div class="home-content">
-            <h1>Hi, I'm Abel Bekele</h1>
-            <h3> Full Stack Web Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quasi repellendus dolores eaque, earum
-                recusandae. Cupiditate obcaecati repellat, eaque rem distinctio vero deleniti explicabo cum, quos
-                dolores impedit itaque quo!</p>
+    <section class="home hidden">
+        <div class="home-content delay hidden">
+            <h1 class="delay hidden" id="typing" >Hi, I'm Abel Bekele</h1>
+            <h3 class="delay hidden"> Full Stack Web Developer</h3>
+            
+            <div class="delay hidden " id="typing-wraper">
+                 <div class="static-txt">
+                    i'm a
+                 </div>
+                 <div class="dynamic-txt">
+                    <ul>
+                        <li> <span>Designer</span></li>
+                        <li> <span>Developer</span></li>
+                        <li> <span> Freelancer</span></li>
+                    </ul>
+                 </div>
+                </div>
 
-            <div class="btn-box">
+            <div class="btn-box delay">
                 <a href="#">Hire Me</a>
                 <a href="#">Let's Talk</a>
 
@@ -45,57 +56,66 @@
                     class="fa-brands fa-linkedin"></i></a>
         </div>
     </section>
-    <section id="about" class="about">
+    <section id="about" class="about hidden">
         <div class="about-content">
             <h1>About</h1>
-
-            <h2>Overview:</h2>
-            <p>
-                I am a highly skilled and experienced Full Stack Web Developer with expertise in HTML, CSS, JavaScript,
-                PHP, Python, and more. I have a strong background in web scraping, bot automation, and developing
-                Telegram and Instagram bots. Additionally, I have created games using JavaScript and C#(unity). With my
-                diverse skill set and passion for coding, I am confident in delivering high-quality solutions for your
-                projects.
-            </p>
-
-            <h2>Skills:</h2>
-            <ul>
-                <li>HTML5, CSS3, JavaScript (ES6+), PHP, Python, C++, Java, C#.</li>
-                <li>Web Scraping (BeautifulSoup)</li>
-                <li>Bot Automation (Telegram, Instagram)</li>
-                <li>Full Stack Web Development</li>
-                <li>Game Development (JavaScript, C#)</li>
-                <li>Database Management (MySQL)</li>
-                <li>Responsive Web Design</li>
-                <li>Version Control (Git)</li>
-            </ul>
-
-            <h2>Experience:</h2>
-            <ol>
-                <li>
-                    <strong>Freelance Web Scraping and Bot Automation Specialist (2022 - Present)</strong>
-                    <ul>
-                        <li>Utilized Python libraries such as BeautifulSoup to scrape data from various websites.</li>
-                        <li>Developed custom bots for automating tasks on Telegram and Instagram platforms.</li>
-                        <li>Implemented data parsing and manipulation techniques to extract valuable insights from
-                            scraped data.</li>
-                        <li>Provided consultation and support to clients for their web scraping and automation needs.
-                        </li>
-                    </ul>
-                </li>
-            </ol>
-
-            <h2>Education:</h2>
-            <ul>
-                <li>Bachelor's Degree in Software Engineering (AASTU, 2021- Present)</li>
-            </ul>
-
-            <h2>Languages:</h2>
-            <ul>
-                <li>English (Fluent)</li>
-                <li>Amharic (Native)</li>
-            </ul>
-
+            <div class="delay hidden">
+                <h2>Overview:</h2>
+                <p>
+                    I am a highly skilled and experienced Full Stack Web Developer with expertise in HTML, CSS,
+                    JavaScript,
+                    PHP, Python, and more. I have a strong background in web scraping, bot automation, and developing
+                    Telegram and Instagram bots. Additionally, I have created games using JavaScript and C#(unity). With
+                    my
+                    diverse skill set and passion for coding, I am confident in delivering high-quality solutions for
+                    your
+                    projects.
+                </p>
+            </div>
+            <div class="delay hidden">
+                <h2>Skills:</h2>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript (ES6+), PHP, Python, C++, Java, C#.</li>
+                    <li>Web Scraping (BeautifulSoup)</li>
+                    <li>Bot Automation (Telegram, Instagram)</li>
+                    <li>Full Stack Web Development</li>
+                    <li>Game Development (JavaScript, C#)</li>
+                    <li>Database Management (MySQL)</li>
+                    <li>Responsive Web Design</li>
+                    <li>Version Control (Git)</li>
+                </ul>
+            </div>
+            <div class="delay hidden">
+                <h2>Experience:</h2>
+                <ol>
+                    <li>
+                        <strong>Freelance Web Scraping and Bot Automation Specialist (2022 - Present)</strong>
+                        <ul>
+                            <li>Utilized Python libraries such as BeautifulSoup to scrape data from various websites.
+                            </li>
+                            <li>Developed custom bots for automating tasks on Telegram and Instagram platforms.</li>
+                            <li>Implemented data parsing and manipulation techniques to extract valuable insights from
+                                scraped data.</li>
+                            <li>Provided consultation and support to clients for their web scraping and automation
+                                needs.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="delay hidden">
+                <h2>Education:</h2>
+                <ul>
+                    <li>Bachelor's Degree in Software Engineering (AASTU, 2021- Present)</li>
+                </ul>
+            </div>
+            <div class="delay hidden">
+                <h2>Languages:</h2>
+                <ul>
+                    <li>English (Fluent)</li>
+                    <li>Amharic (Native)</li>
+                </ul>
+            </div>
             <p>
                 I am dedicated to delivering high-quality work, meeting deadlines, and exceeding client expectations.
                 Let's discuss your project requirements and how I can help you achieve your goals. Contact me now to get
@@ -104,17 +124,17 @@
         </div>
     </section>
 
-    <section id="projects" class="project">
-        <div class="project-content">
+    <section  class="project" id="projects">
+        <div class="project-content hidden">
             <h1>Projects</h1>
-            <div class="project-container">
-                <div class="proj">
+            <div class="project-container delay hidden">
+                <div class="proj delay hidden">
                     <h3>Title</h3>
                 </div>
-                <div class="proj">
+                <div class="proj delay hidden">
                     <h3>Title</h3>
                 </div>
-                <div class="proj">
+                <div class="proj delay hidden">
                     <h3>Title</h3>
                 </div>
             </div>
@@ -122,9 +142,12 @@
 
     </section>
     <section id="contact" class="contact">
-        <div class="contact-content">
-            <h1>Contact</h1>
-            <fieldset>
+        <div class="contact-content delay hidden">
+            <h1 class="delay hidden">Contact</h1>
+            <h3 class="delay hidden">+251947887396</h3>
+            <h3 class="delay hidden">abelbeworking245@gmail.com</h3>
+
+            <!-- <fieldset>
                 <form action="">
                     <label for="email">Email</label>
                     <input name="email" type="email" placeholder="example@example.com">
@@ -135,7 +158,7 @@
                     <br>
                     <input type="submit">
                 </form>
-            </fieldset>
+            </fieldset> -->
         </div>
     </section>
 </body>
