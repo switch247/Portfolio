@@ -2,7 +2,12 @@
 /* #081b29 , #ededed , #00abf0; */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
+:root{
+    --color-white:#ededed;
+    --color-blue-black:#081b29;
+    --color-blue:#00ab;
+    --color-cyan:#00abf0;
+}
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +16,8 @@
 }
 
 body {
-    background-color: #081b29;
-    color: #ededed;
+    background-color: var(--color-blue-black);
+    color: var(--color-white);
 
 }
 
@@ -44,7 +49,7 @@ body {
     /* background: #00abf0; */
     padding: 10px;
     font-size: 26px;
-    color: #ededed;
+    color: var(--color-white);
     text-decoration: none;
     font-weight: 600;
 }
@@ -60,7 +65,7 @@ body {
 } */
 .header .nav-bar a {
     font-size: 18px;
-    color: #ededed;
+    color: var(--color-white);
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -68,12 +73,12 @@ body {
 }
 
 .header .nav-bar a i {
-    color: #ededed;
+    color: var(--color-white);
 }
 
 .header .nav-bar a:hover,
 .header .nav-bar .active {
-    color: #00ab;
+    color: var(--color-blue);
 
 }
 
@@ -103,7 +108,7 @@ body {
 .home .home-content h3 {
     font-size: 32px;
     font-weight: 700;
-    color: #00abf0;
+    color: var(--color-cyan);
 }
 
 .home-content p {
@@ -127,8 +132,8 @@ body {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
+    background: var(--color-cyan);
+    border: 2px solid var(--color-cyan);
     border-radius: 8px;
     color: #081b29;
     text-decoration: none;
@@ -141,7 +146,7 @@ body {
 
 .btn-box a:nth-child(2) {
     background: transparent;
-    color: #00abf0;
+    color: var(--color-cyan);
 }
 
 .btn-box a:nth-child(2):hover {
@@ -149,11 +154,11 @@ body {
 }
 
 .btn-box a:nth-child(2)::before {
-    background: #00abf0;
+    background: var(--color-cyan);
 }
 
 .btn-box a:hover {
-    color: #00abf0;
+    color: var(--color-cyan);
 }
 
 .btn-box a:before {
@@ -163,7 +168,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #081b29;
+    background: var(--color-blue-black);
     z-index: -1;
     transition: 0.4s;
 }
@@ -224,7 +229,24 @@ h1 {
 .about .about-content h2 {
     font-size: 32px;
     font-weight: 700;
-    color: #00abf0;
+    color: var(--color-cyan);
+}
+
+.skills {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin: 0 30px;
+}
+.Experience {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin: 0 30px;
 }
 
 .project {
@@ -266,7 +288,7 @@ h1 {
 }
 
 .project-container .proj:hover {
-    box-shadow: 1px solid #00abf0;
+    box-shadow: 1px solid var(--color-cyan);
     scale: 1.2;
 }
 
@@ -285,7 +307,7 @@ h1 {
     display: inline;
     font-size: 32px;
     font-weight: 700;
-    color: #00abf0;
+    color: var(--color-cyan);
 }
 
 
@@ -335,7 +357,7 @@ h1 {
 }
 
 #typing-wraper .static-txt {
-    color: #ededed;
+    color: var(--color-white);
     font-size: 60px;
     font-weight: 400;
     
@@ -353,7 +375,7 @@ h1 {
     font-size: 60px;
     font-weight: 500;
     list-style: none;
-    color: #00abf0;
+    color: var(--color-cyan);
     position: relative;
     top:0;
     overflow: hidden;
@@ -376,8 +398,8 @@ h1 {
     height: 100%;
     width: 100%;
     content: '';
-    background-color: #081b29;
-    border-left: 2px solid #00abf0;
+    background-color: var(--color-blue-black);
+    border-left: 2px solid var(--color-cyan);
     animation: typing 2s infinite, cursor .4s step-end infinite alternate;
 
 }
