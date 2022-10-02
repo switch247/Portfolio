@@ -1,190 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
-defer></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/6bed12e9d5.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6bed12e9d5.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js" defer></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header">
-        <a href="#" class="logo">Abel</a>
-        
-        <nav class="nav-bar">
-            <ul>
-                <a href="#"> Home</a>
-                <a href="#projects"> Projects</a>
-                <a href="#about"> About</a>
-                <a href="#skills"> Skills</a>
-                <a href="#Experience"> Experience</a>
-                <a href="#contact"> Contact</a>
-            </ul>
-        </nav>
+      <a href="#" class="logo">Abel</a>
+
+      <nav class="nav-bar">
+        <ul>
+          <a href="#"> Home</a>
+          <a href="#projects"> Projects</a>
+          <a href="#about"> About</a>
+          <a href="#skills"> Skills</a>
+          <a href="#Experience"> Experience</a>
+          <a href="#contact"> Contact</a>
+        </ul>
+      </nav>
     </header>
 
     <section class="home hidden">
-        <div class="home-content delay hidden">
-            <h1 class="delay hidden" id="typing" >Hi, I'm Abel Bekele</h1>
-            <h3 class="delay hidden"> Full Stack Web Developer</h3>
-            
-            <div class="delay hidden " id="typing-wraper">
-                 <div class="static-txt">
-                    i'm a
-                 </div>
-                 <div class="dynamic-txt">
-                    <ul>
-                        <li> <span>Designer</span></li>
-                        <li> <span>Developer</span></li>
-                        <li> <span> Freelancer</span></li>
-                    </ul>
-                 </div>
-                </div>
+      <div class="home-content delay hidden">
+        <h1 class="delay hidden" id="typing">Hi, I'm Abel Bekele</h1>
+        <h3 class="delay hidden">Full Stack Web Developer</h3>
 
-            <div class="btn-box delay">
-                <a href="mailto:abelbeworking245@gmail.com">Hire Me</a>
-                <a href="mailto:abelbeworking245@gmail.com">Let's Talk</a>
+        <div class="delay hidden" id="typing-wraper">
+          <div class="static-txt">i'm a</div>
+          <div class="dynamic-txt">
+            <ul>
+              <li><span>Designer</span></li>
+              <li><span>Developer</span></li>
+              <li><span> Freelancer</span></li>
+            </ul>
+          </div>
+        </div>
 
-            </div>
+        <div class="btn-box delay">
+          <a href="mailto:abelbeworking245@gmail.com">Hire Me</a>
+          <a href="mailto:abelbeworking245@gmail.com">Let's Talk</a>
         </div>
-        <div class="links">
-            <a href="https://www.twitter.com/AbelBekeleMeaza" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.github.com/Switch247" target="_blank"> <i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/abel-meaza-0851a4227" target="_blank"> <i
-                    class="fa-brands fa-linkedin"></i></a>
-        </div>
+      </div>
+      <div class="links">
+        <a href="https://www.twitter.com/AbelBekeleMeaza" target="_blank">
+          <i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.github.com/Switch247" target="_blank">
+          <i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/abel-meaza-0851a4227"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
     </section>
- 
 
-    <section  class="project" id="projects">
-        <div class="project-content hidden">
-            <h1>Projects</h1>
-            <div class="project-container delay hidden">
-                <div class="card" style="width: 300px;
-                height: 400px; color: black;">
-                    <img src="https://source.unsplash.com/1600x900/?kungfu" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">EVERYBODY LOVES KUNG FU FIGHTING</h5>
-                      <p class="card-text">java script 2 player fighting game.</p>
-                      <a href="https://loquacious-pithivier-09668b.netlify.app/" class="btn btn-primary">Go</a>
-                    </div>
-                  </div>
-                <!-- <div class="proj delay hidden">
-                    <h3>  <a href="https://loquacious-pithivier-09668b.netlify.app/">KUNG FU FIGHTING</a> </h3>
-                    <h4>java script 2 player fighting game</h4>
-                </div> -->
-               <!-- <div class="proj delay hidden">
-                    <h3><a href="https://jovian-careers-website-v2-58e4.onrender.com">Jovian careers website</a></h3>
-                    <h4>careers website made in flask</h4>
-                </div> -->
-                <div class="card" style="width: 300px;
-                height: 400px; color: black;">
-                    <img src="https://source.unsplash.com/1600x900/?work" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Jovian careers website</h5>
-                      <p class="card-text">careers website made in flask.</p>
-                      <a href="https://jovian-careers-website-v2-58e4.onrender.com" class="btn btn-primary">Go</a>
-                    </div>
-                  </div>
-                 <!-- 
-                <div class="proj delay hidden">
-                    <h3>Title</h3>
-                </div> -->
-            </div>
+    <section class="project" id="projects">
+      <div class="project-content hidden">
+        <div class="project-header">
+          <h1>Projects</h1>
+          <span class="project-count">0 Projects</span>
         </div>
+        <div
+          class="project-container delay hidden"
+          id="project-cards-container"
+        >
+          <!-- Project cards will be rendered here by JS -->
+        </div>
+      </div>
     </section>
 
     <section id="about" class="about hidden">
-        <div class="about-content">
-            <h1>About</h1>
-            <div class="delay hidden">
-                <h2>Overview:</h2>
-                <p>
-                    I am a highly skilled and experienced Full Stack Web Developer with expertise in HTML, CSS,
-                    JavaScript,
-                    PHP, Python, and more. I have a strong background in web scraping, bot automation, and developing
-                    Telegram and Instagram bots. Additionally, I have created games using JavaScript and C#(unity). With
-                    my
-                    diverse skill set and passion for coding, I am confident in delivering high-quality solutions for
-                    your
-                    projects.
-                </p>
-            </div>
-
-            <div class="delay hidden">
-                <h2>Education:</h2>
-                <ul>
-                    <li>Bachelor's Degree in Software Engineering (AASTU, 2021- Present)</li>
-                </ul>
-            </div>
-            <div class="delay hidden">
-                <h2>Languages:</h2>
-                <ul>
-                    <li>English (Fluent)</li>
-                    <li>Amharic (Native)</li>
-                </ul>
-            </div>
-            <p>
-                I am dedicated to delivering high-quality work, meeting deadlines, and exceeding client expectations.
-                Let's discuss your project requirements and how I can help you achieve your goals. Contact me now to get
-                started!
-            </p>
-        </div>
-    </section>
-    <section id="skills" class="skills hidden">
+      <div class="about-content">
+        <h1>About</h1>
         <div class="delay hidden">
-            <h2>Skills:</h2>
-            <ul>
-                <li>HTML5, CSS3, JavaScript (ES6+), PHP, Python, C++, Java, C#.</li>
-                <li>Web Scraping (BeautifulSoup)</li>
-                <li>Bot Automation (Telegram, Instagram)</li>
-                <li>Full Stack Web Development</li>
-                <li>Game Development (JavaScript, C#)</li>
-                <li>Database Management (MySQL)</li>
-                <li>Responsive Web Design</li>
-                <li>Version Control (Git)</li>
-            </ul>
+          <h2>Overview:</h2>
+          <p>
+            I am a highly skilled and experienced Full Stack Web Developer with
+            expertise in HTML, CSS, JavaScript, PHP, Python, and more. I have a
+            strong background in web scraping, bot automation, and developing
+            Telegram and Instagram bots. Additionally, I have created games
+            using JavaScript and C#(unity). With my diverse skill set and
+            passion for coding, I am confident in delivering high-quality
+            solutions for your projects.
+          </p>
         </div>
+
+        <div class="delay hidden">
+          <h2>Education:</h2>
+          <ul>
+            <li>
+              Bachelor's Degree in Software Engineering (AASTU, 2021- Present)
+            </li>
+          </ul>
+        </div>
+        <div class="delay hidden">
+          <h2>Languages:</h2>
+          <ul>
+            <li>English (Fluent)</li>
+            <li>Amharic (Native)</li>
+          </ul>
+        </div>
+        <p>
+          I am dedicated to delivering high-quality work, meeting deadlines, and
+          exceeding client expectations. Let's discuss your project requirements
+          and how I can help you achieve your goals. Contact me now to get
+          started!
+        </p>
+      </div>
     </section>
     
-    <section id="Experience" class="Experience hidden">
-        <div class="delay hidden">
-            <h2>Experience:</h2>
-            <ol>
-                <li>
-                    <strong>Freelance Web Scraping and Bot Automation Specialist (2022 - Present)</strong>
-                    <ul>
-                        <li>Utilized Python libraries such as BeautifulSoup to scrape data from various websites.
-                        </li>
-                        <li>Developed custom bots for automating tasks on Telegram and Instagram platforms.</li>
-                        <li>Implemented data parsing and manipulation techniques to extract valuable insights from
-                            scraped data.</li>
-                        <li>Provided consultation and support to clients for their web scraping and automation
-                            needs.
-                        </li>
-                    </ul>
-                </li>
-            </ol>
+    <section id="skills" class="skills hidden">
+      <div class="delay hidden">
+        <h2>Skills:</h2>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Programming Languages</h5>
+                  <ul class="mb-0">
+                    <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                    <li>PHP, Python, C++, Java, C#</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <ul class="mb-0">
+                    <li>Full Stack Web Development</li>
+                    <li>Responsive Web Design</li>
+                    <li>Vanilla JavaScript (ES6+)</li>
+                    <li>AJAX, jQuery</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Deployment</h5>
+                  <ul class="mb-0">
+                    <li>cPanel</li>
+                    <li>Replit</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Database Management</h5>
+                  <ul class="mb-0">
+                    <li>MySQL, SQLite, PostgreSQL</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Automation & Scripting</h5>
+                  <ul class="mb-0">
+                    <li>Web Scraping (BeautifulSoup)</li>
+                    <li>Bot Automation (Telegram, Instagram)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Game Development</h5>
+                  <ul class="mb-0">
+                    <li>JavaScript, C#, Unity</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Version Control</h5>
+                  <ul class="mb-0">
+                    <li>Git, GitLab</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-   
-    <section id="contact" class="contact">
-        <div class="contact-content delay hidden">
-            <h1 class="delay hidden">Contact</h1>
-            <h3 class="delay hidden">+251947887396</h3>
-            <h3 class="delay hidden">abelbeworking245@gmail.com</h3>
 
-            <!-- <fieldset>
+    <section id="Experience" class="Experience hidden">
+      <div class="delay hidden">
+        <h2>Experience:</h2>
+        <div class="experience-timeline">
+          <div class="exp-card">
+            <div class="exp-header">
+              <span class="exp-role"
+                >Freelance Web Scraping & Bot Automation Specialist</span
+              >
+              <span class="exp-year">2022</span>
+            </div>
+            <ul class="exp-details">
+              <li>
+                Utilized Python libraries such as
+                <strong>BeautifulSoup</strong> to scrape data from various
+                websites.
+              </li>
+              <li>
+                Developed custom bots for automating tasks on
+                <strong>Telegram</strong> and
+                <strong>Instagram</strong> platforms.
+              </li>
+              <li>
+                Implemented data parsing and manipulation techniques to extract
+                valuable insights from scraped data.
+              </li>
+              <li>
+                Provided consultation and support to clients for their web
+                scraping and automation needs.
+              </li>
+            </ul>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <span class="exp-role">Yeneta Code Internship</span>
+              <span class="exp-year">2021</span>
+            </div>
+            <ul class="exp-details">
+              <li>
+                Built and maintained modern, mobile-friendly websites using
+                <strong>HTML5</strong>, <strong>CSS3</strong>, and
+                <strong>JavaScript</strong>.
+              </li>
+              <li>
+                Developed dynamic server-side features and RESTful APIs with
+                <strong>PHP</strong> and <strong>Python</strong>.
+              </li>
+              <li>
+                Designed and managed <strong>MySQL</strong> databases for
+                efficient data storage and retrieval.
+              </li>
+              <li>
+                Led the development of an interactive e-learning platform,
+                handling both client-side and server-side implementation.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-content delay hidden">
+        <h1 class="delay hidden">Contact</h1>
+        <h3 class="delay hidden">+251947887396</h3>
+        <h3 class="delay hidden">abelbeworking245@gmail.com</h3>
+
+        <!-- <fieldset>
                 <form action="">
                     <label for="email">Email</label>
                     <input name="email" type="email" placeholder="example@example.com">
@@ -196,8 +298,7 @@ defer></script>
                     <input type="submit">
                 </form>
             </fieldset> -->
-        </div>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>

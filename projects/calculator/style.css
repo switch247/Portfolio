@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  /* background: whitesmoke; */
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  padding: auto;
+  background: rgb(7, 1, 32);
+  border-radius: 0.5em;
+  min-width: 320px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.disp {
+  width: 100%;
+  padding-top: 1em;
+}
+
+.disp::before {
+  width: 100%;
+  text-transform: uppercase;
+  /* background: rgb(29, 7, 117); */
+  content: " mathing the math";
+  color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  text-align: right;
+}
+#input {
+  border: 1px none red;
+  width: 100%;
+  background: transparent;
+  align-self: left;
+  color: white;
+  text-align: right;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: auto;
+}
+
+.calculator form .but {
+  margin: 3px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgb(11, 5, 43);
+  border: 1px;
+  color: white;
+  padding: auto;
+}
+.calculator form .but:hover {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  transition: 300ms;
+  border: solid 1px rgb(247, 240, 240);
+  background-color: rgba(65, 60, 60, 0.8);
+}
+
+.calculator form .but.g {
+  /* color: rgb(7, 238, 7); */
+  background-color: rgba(14, 224, 49, 0.8);
+  font: bold;
+  /* font-size: 28px; */
+}
+
+.calculator #eval {
+  background-color: orange;
+  /* width: 90px; */
+}

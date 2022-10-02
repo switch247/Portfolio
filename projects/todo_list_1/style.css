@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://source.unsplash.com/1600x900');
+}
+
+.to-do-list {
+    position: relative;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 1em;
+    /* padding: 10px; */
+}
+.to-do-list h1{
+    background-color: #03a9f4;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+.to-do-list ul {
+    position: relative;
+    padding: 20px;
+}
+
+.to-do-list ul li {
+    position: relative;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    list-style: none;
+}
+.to-do-list ul li:last-child{
+    border-bottom: none;
+}
+
+.to-do-list ul li label{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.to-do-list ul li label input{
+    visibility: hidden;
+    appearance: none;
+
+}
+.to-do-list ul li label p{
+  position:absolute;
+}
+
+.to-do-list ul li label span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-list ul li label span::before{
+    /* this creates a check mark */
+    content: '';
+    position: absolute;
+    top: 5px;
+    width:10px;
+    height:5px;
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    transform: rotate(-40deg);
+
+}
+
+.to-do-list ul li label input:checked ~ p{
+    text-decoration: line-through;
+    color: #ccc;
+}
+.to-do-list ul li label input:checked ~ span{
+    background-color: #03a9f4;
+}
+.to-do-list ul li label input:checked ~ span::before{
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+
+.to-do-list .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    gap: 10px;
+}
+
+.to-do-list ul li label i{
+    position:absolute;
+    left: -20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
