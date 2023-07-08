@@ -1,0 +1,247 @@
+/* background: url('https://source.unsplash.com/1600x900/?city') no-repeat center center/cover; */
+/* #081b29 , #ededed , #00abf0; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    background-color: #081b29;
+    color: #ededed;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 20px 10%;
+    background: transparent;
+    background: #081b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header.test{
+    width: auto;
+    height: 100%;
+    margin-right: 35px;
+    flex-direction: column;
+    padding: 10% 20px;
+    /* background: #00abf0; */
+
+}
+.header .logo{
+    /* background: #00abf0; */
+    padding: 10px;
+    font-size: 26px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.header.test  .nav-bar ul{
+    display: flex;
+    flex-direction: column;
+}
+/* .header .nav-bar{
+    display: flex;
+    gap: 10px;
+} */
+.header .nav-bar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.4s;
+}
+.header .nav-bar a i{
+    color: #ededed;
+}
+.header .nav-bar a:hover , .header .nav-bar .active{
+    color: #00ab;
+
+}
+
+
+.home{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin-bottom: 30px;
+}
+.home .home-content{
+    background: transparent;
+    max-width: 600px;
+    padding: 2px ;
+
+}
+.home .home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home .home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 345px;
+    height:50px;
+    /* background: yellow; */
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height:100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+.btn-box a:hover{
+    color: #00abf0;
+}
+.btn-box a:before{
+    content: '';
+    position:absolute;
+    top: 0;  
+    left:0;
+    width:0;
+    height:100%;
+    background: #081b29;
+    z-index: -1;
+    transition: 0.4s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+.links{
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+    /* z-index: 2; */
+    text-decoration: none;
+    
+}
+.links a{
+    color: #ededed;
+    text-decoration: none;
+    margin-left: 35px;
+}
+.links a i{
+    scale: 2;
+}
+.links a:hover i{
+    scale: 3;
+
+}
+.about{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin: 0 30px;
+}
+.about .about-content{
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 35px;
+
+}
+h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.about .about-content h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.project{
+    /* position: relative; */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin-bottom: 30px;
+}
+.project .project-content{
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-container{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.project-container .proj{
+    background: url('https://source.unsplash.com/1600x900/?city') no-repeat center center/cover;
+    width: 300px;
+    height: 500px;
+}
+.project-container .proj:hover{
+    box-shadow: 1px solid #00abf0;
+    scale: 1.2;
+}
+
+
+.contact{
+    /* position: relative; */
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin-top: 30px;
+
+}
